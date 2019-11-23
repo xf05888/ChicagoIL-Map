@@ -38,6 +38,5 @@ draw = ImageDraw.Draw(resultImage)
 draw.text((5, ysize*256-15), attribution, (0,0,0))
 del draw
 
-now = datetime.datetime.now()
-outputFileName = "map%02d-%02d%02d%02d-%02d%02d.png" % (zoom, now.year % 100, now.month, now.day, now.hour, now.minute)
+outputFileName = "Chicago.png" 
 resultImage.save(outputFileName)
